@@ -85,7 +85,32 @@ import "./App.css";
 // import CounterOne from "./components/HooksInReact/FilesRelatedToCustomHook/CustomHookExample2/CounterOne";
 // import CounterTwo from "./components/HooksInReact/FilesRelatedToCustomHook/CustomHookExample2/CounterTwo";
 
-import UserForm from "./components/HooksInReact/FilesRelatedToCustomHook/CustomHookExample3/UserForm";
+// import UserForm from "./components/HooksInReact/FilesRelatedToCustomHook/CustomHookExample3/UserForm";
+
+// import RenderingConceptWRTuseState from "./components/ReactRenderConcepts/RenderingConceptWRTuseState";
+
+// import RenderingConceptWRTuseReducer from "./components/ReactRenderConcepts/RenderingWRTPrimitiveTypeAsState/RenderingConceptWRTuseReducer";
+
+// import ObjectAsState from "./components/ReactRenderConcepts/RenderingWRTObjectOrArrayAsState/ObjectAsState";
+// import ArrayAsState from "./components/ReactRenderConcepts/RenderingWRTObjectOrArrayAsState/ArrayAsState";
+
+// import Parent from "./components/ReactRenderConcepts/ParentChildRender/Parent";
+
+// import OptParent from "./components/ReactRenderConcepts/RenderingOptimizations/OptimizationByUsingSameElementReferenceTechnique/OptParent";
+// import Child from "./components/ReactRenderConcepts/RenderingOptimizations/OptimizationByUsingSameElementReferenceTechnique/Child";
+
+// import GrandParent from "./components/ReactRenderConcepts/RenderingOptimizations/OptimizationByUsingSameElementReferenceTechnique/GrandParent";
+
+// import Parent from "./components/ReactRenderConcepts/RenderingOptimizations/OptimizationUsingReactmemo/Parent";
+
+// import Parent from "./components/ReactRenderConcepts/IncorrectRenderingOptimizationsUsingReactmemo/UseCaseA/Parent";
+
+// import Parent from "./components/ReactRenderConcepts/IncorrectRenderingOptimizationsUsingReactmemo/UseCaseB/Parent";
+
+// import Parent from "./components/ReactRenderConcepts/IncorrectRenderingOptimizationsUsingReactmemo/UseCaseC/Parent";
+
+import Parent from "./components/ReactRenderConcepts/ReactContextAndRender/Parent";
+// import ChildA from "./components/ReactRenderConcepts/ReactContextAndRender/ChildA";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
@@ -235,7 +260,35 @@ function App() {
       {/* <CounterOne />
       <CounterTwo /> */}
 
-      <UserForm />
+      {/* <UserForm /> */}
+
+      {/* <RenderingConceptWRTuseState /> */}
+
+      {/* <RenderingConceptWRTuseReducer /> */}
+
+      {/* <ObjectAsState />
+      <ArrayAsState /> */}
+
+      {/* <Parent /> */}
+
+      {/* <OptParent>
+        <Child />
+      </OptParent> */}
+
+      {/* <GrandParent /> */}
+
+      {/* <Parent /> */}
+
+      {/* <Parent /> */}
+
+      {/* <Parent /> */}
+
+      {/* <Parent /> */}
+
+      <Parent />
+      {/* <Parent>
+        <ChildA />
+      </Parent> */}
     </div>
 
     // </CountContext.Provider>
