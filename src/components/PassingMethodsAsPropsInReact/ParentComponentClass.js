@@ -1,6 +1,6 @@
 //Parent Component and Child Component are created to explain how we can pass methods as props //Chapter - 15
 import React, { Component } from "react";
-import ChildComponent from "../StylingInReact/ChildComponent"
+import ChildComponent from "./ChildComponent"
 
 class ParentComponent extends Component {
   constructor(props) {

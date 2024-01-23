@@ -1,7 +1,7 @@
 import "./App.css";
-// import Greet, { Morning } from "./components/ToExplainDefaultAndNamedExport";
+// import Greet, { Morning } from "./components/DefaultAndNamedExportInReact/ToExplainDefaultAndNamedExport";
 // import ToExplainJsx from "./components/ToExplainJsx";
-// import SuperHero from "./components/ToExplainPropsInFunctionComponents";
+// import SuperHero from "./components/PropsInReact/ToExplainPropsInFunctionComponents";
 // import SuperHero from "./components/ToExplainPropsInClassComponents";
 // import ExplainState from "./components/ToExplainStateInClassComponents";
 // import Counter from "./components/ToExplainsetStateInClassComponents";
@@ -9,7 +9,7 @@ import "./App.css";
 // import ExplainEventBinding from "./components/ToExplainHowToBindEventHandlers";
 // import ParentComponent from "./components/ParentComponent";
 // import ToExplainConditionalRendering from "./components/ToExplainConditionalRendering"
-// import ToExplainStylingReactComponents from "./components/ToExplainStylingReactComponents";
+// import ToExplainStylingReactComponents from "./components/StylingInReact/ToExplainStylingReactComponents";
 // import LifeCycleParentComponent from "./components/LifeCycleParentComponent";
 // import ToExplainReactFragments from './components/ToExplainReactFragments'
 // import TableComponent from './components/TableComponent'
@@ -109,7 +109,7 @@ import "./App.css";
 
 // import Parent from "./components/ReactRenderConcepts/IncorrectRenderingOptimizationsUsingReactmemo/UseCaseC/Parent";
 
-import Parent from "./components/ReactRenderConcepts/ReactContextAndRender/Parent";
+// import Parent from "./components/ReactRenderConcepts/ReactContextAndRender/Parent";
 // import ChildA from "./components/ReactRenderConcepts/ReactContextAndRender/ChildA";
 
 function App() {
@@ -121,9 +121,8 @@ function App() {
     // >
 
     <div className="App">
-      {/* <Greet /> */}
-
-      {/* <Morning /> */}
+      {/* <Greet />
+      <Morning /> */}
 
       {/* <ToExplainJsx /> */}
 
@@ -285,7 +284,7 @@ function App() {
 
       {/* <Parent /> */}
 
-      <Parent />
+      {/* <Parent /> */}
       {/* <Parent>
         <ChildA />
       </Parent> */}
