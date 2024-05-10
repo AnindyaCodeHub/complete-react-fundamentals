@@ -5,7 +5,7 @@ import ComponentF from "./ComponentF";
 import UserContext from "./userContext";
 
 export class ComponentE extends Component {
-  static contextType = UserContext; //Public class field syntax. We can write this instead of line 17
+  static contextType = UserContext; //Public class field syntax. We can write this instead of line 19
   render() {
     return (
       <div>

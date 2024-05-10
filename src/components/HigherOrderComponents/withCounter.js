@@ -1,4 +1,5 @@
 //Chapter - 34
+
 import React from "react";
 
 const withCounter = (WrappedComponent, incrementNumber) => {
@@ -35,3 +36,27 @@ const withCounter = (WrappedComponent, incrementNumber) => {
 };
 
 export default withCounter;
+
+// import React, { useState } from "react";
+
+// const withCounter = (WrappedComponent, incrementNumber) => {
+//   // Here we define a functional component instead of a class component
+//   const WithCounter = (props) => {
+//     const [count, setCount] = useState(0);
+
+//     const incrementCount = () => {
+//       setCount((prevCount) => prevCount + incrementNumber);
+//     };
+
+//     return (
+//       <WrappedComponent
+//         count={count}
+//         incrementCount={incrementCount}
+//         {...props} // This line is important, as by doing this we enable passing down of props to the wrapped component
+//       />
+//     );
+//   };
+//   return WithCounter;
+// };
+
+// export default withCounter;

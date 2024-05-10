@@ -55,17 +55,25 @@ function IntervaluseEffectCounter() {
   const [count, setCount] = useState(0);
 
   const tick = () => {
+    console.log("inside tick");
     setCount(count + 1);
   };
 
   useEffect(() => {
+    console.log("inside useEffect");
     const interval = setInterval(tick, 1000);
 
     return () => {
       clearInterval(interval);
     };
   }, [count]);
-  return <h1>{count}</h1>;
+
+  return (
+    <>
+      {console.log("inside return")}
+      <h1>{count}</h1>
+    </>
+  );
 }
 
 export default IntervaluseEffectCounter;

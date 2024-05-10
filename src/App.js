@@ -11,9 +11,9 @@ import "./App.css";
 // import ToExplainConditionalRendering from "./components/ToExplainConditionalRendering"
 // import ToExplainStylingReactComponents from "./components/StylingInReact/ToExplainStylingReactComponents";
 // import LifeCycleParentComponent from "./components/LifeCycleParentComponent";
-// import ToExplainReactFragments from './components/ToExplainReactFragments'
-// import TableComponent from './components/TableComponent'
-// import ToExplainPureComponents from './components/ToExplainPureComponents'
+// import ToExplainReactFragments from './components/ToExplainReactFragments';
+// import TableComponent from './components/TableComponent';
+// import ToExplainPureComponents from "./components/PureComponents/ToExplainPureComponents";
 // import ToExplainRefs from "./components/RefsInClassComponents/ToExplainRefs";
 // import ParentClass from './components/RefsInClassComponents/ParentClass'
 // import ParentClass from "./components/ForwardRefInReact/ParentClass";
@@ -112,6 +112,8 @@ import "./App.css";
 // import Parent from "./components/ReactRenderConcepts/ReactContextAndRender/Parent";
 // import ChildA from "./components/ReactRenderConcepts/ReactContextAndRender/ChildA";
 
+import UncontrolledInput from "./components/ControlledAndUncontrolledComponents/ControlledAndUncontrolledComponents";
+
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
 
@@ -176,7 +178,11 @@ function App() {
 
       {/* <Counter
         render={(count, incrementCount) => (
-          <ClickCounter count={count} incrementCount={incrementCount} />
+          <ClickCounter
+            count={count}
+            incrementCount={incrementCount}
+            name="Jana"
+          />
         )}
       />
 
@@ -288,6 +294,8 @@ function App() {
       {/* <Parent>
         <ChildA />
       </Parent> */}
+
+      <UncontrolledInput />
     </div>
 
     // </CountContext.Provider>
