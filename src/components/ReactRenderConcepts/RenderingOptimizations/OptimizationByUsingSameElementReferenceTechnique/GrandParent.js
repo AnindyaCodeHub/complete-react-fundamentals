@@ -19,6 +19,7 @@ import Child from "./Child";
 
 function GrandParent() {
   const [newCount, setNewCount] = useState(0);
+  console.log("Grand Parent Render");
 
   return (
     <div>

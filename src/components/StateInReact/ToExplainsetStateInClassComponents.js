@@ -49,6 +49,13 @@ class Counter extends Component {
     }));
   }
 
+  //or, we can write like this:
+  // increment() {
+  //   this.setState(function (prevState) {
+  //     return { count: prevState.count + 1 };
+  //   });
+  // }
+
   incrementFive() {
     this.increment();
     this.increment();

@@ -5,42 +5,60 @@
 //Please note, to explain memo (what pure component do in class components, memo does the same thing in functional components)
 //we are using this ToExplainPureComponents as a parent component and ToExplainMemo will work as a child component.
 
-import React, { Component } from "react";
-import PureComponentClass from "./PureComponent";
-import RegularComponentClass from "./RegularComponentClass";
-import ToExplainMemo from "../ReactMemo/ToExplainMemo";
+// import React, { Component } from "react";
+// import PureComponentClass from "./PureComponent";
+// import RegularComponentClass from "./RegularComponentClass";
+// import ToExplainMemo from "../ReactMemo/ToExplainMemo";
 
-class ToExplainPureComponents extends Component {
-  constructor(props) {
-    super(props);
+// class ToExplainPureComponents extends Component {
+//   constructor(props) {
+//     super(props);
 
-    this.state = {
-      name: "Jana",
-    };
-  }
+//     this.state = {
+//       name: "Jana",
+//     };
+//   }
 
-  componentDidMount() {
+//   componentDidMount() {
+//     setInterval(() => {
+//       this.setState({
+//         name: "Jana",
+//       });
+//     }, 2000);
+//   }
+
+//   render() {
+//     console.log(
+//       "***************************Parent Component Render***************************"
+//     );
+//     return (
+//       <div>
+//         Parent Component
+//         <RegularComponentClass name={this.state.name} />
+//         <PureComponentClass name={this.state.name} />
+//         {/* <ToExplainMemo name={this.state.name} /> */}
+//       </div>
+//     );
+//   }
+// }
+
+// export default ToExplainPureComponents;
+
+import React, { useEffect, useState } from "react";
+
+const ToExplainPureComponents = () => {
+  const [name, setName] = useState("Jana");
+  // const [count, setCount] = useState(0);
+  useEffect(() => {
     setInterval(() => {
-      this.setState({
-        name: "Jana",
-      });
+      console.log("Setting the state");
+      setName(`Jana ${Math.random()}`);
+      // setCount((prevCount) => prevCount + 1);
     }, 2000);
-  }
+  }, []);
 
-  render() {
-    console.log(
-      "***************************Parent Component Render***************************"
-    );
-    return (
-      <div>
-        Parent Component
-        {/* <RegularComponentClass name={this.state.name} />
-        <PureComponentClass name={this.state.name} /> */}
+  console.log("Rendering the component");
+  return <div>Explain memo: {name}</div>;
+};
 
-        <ToExplainMemo name={this.state.name} />
-      </div>
-    );
-  }
-}
-
-export default ToExplainPureComponents;
+export default React.memo(ToExplainPureComponents);

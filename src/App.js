@@ -4,20 +4,20 @@ import "./App.css";
 // import SuperHero from "./components/PropsInReact/ToExplainPropsInFunctionComponents";
 // import SuperHero from "./components/ToExplainPropsInClassComponents";
 // import ExplainState from "./components/ToExplainStateInClassComponents";
-// import Counter from "./components/ToExplainsetStateInClassComponents";
-// import EventHandling from "./components/ToExplainEventHandling";
-// import ExplainEventBinding from "./components/ToExplainHowToBindEventHandlers";
+// import Counter from "./components/StateInReact/ToExplainsetStateInClassComponents";
+// import EventHandling from "./components/EventHandlingInReact/ToExplainEventHandling";
+// import ExplainEventBinding from "./components/EventHandlingInReact/ToExplainHowToBindEventHandlers";
 // import ParentComponent from "./components/ParentComponent";
 // import ToExplainConditionalRendering from "./components/ToExplainConditionalRendering"
 // import ToExplainStylingReactComponents from "./components/StylingInReact/ToExplainStylingReactComponents";
-// import LifeCycleParentComponent from "./components/LifeCycleParentComponent";
+// import LifeCycleParentComponent from "./components/ReactClassComponentLifeCycleMethods/LifeCycleParentComponent";
 // import ToExplainReactFragments from './components/ToExplainReactFragments';
 // import TableComponent from './components/TableComponent';
 // import ToExplainPureComponents from "./components/PureComponents/ToExplainPureComponents";
 // import ToExplainRefs from "./components/RefsInClassComponents/ToExplainRefs";
 // import ParentClass from './components/RefsInClassComponents/ParentClass'
 // import ParentClass from "./components/ForwardRefInReact/ParentClass";
-// import ToExplainPortals from "./components/PortalsInReact.js/ToExplainPortals";
+// import ToExplainPortals from "./components/PortalsInReact/ToExplainPortals";
 // import ParentClass from "./components/ErrorBoundary/ParentClass";
 // import ClickCounter from "./components/HigherOrderComponents/ClickCounter";
 // import HoverCounter from "./components/HigherOrderComponents/HoverCounter";
@@ -112,7 +112,7 @@ import "./App.css";
 // import Parent from "./components/ReactRenderConcepts/ReactContextAndRender/Parent";
 // import ChildA from "./components/ReactRenderConcepts/ReactContextAndRender/ChildA";
 
-import UncontrolledInput from "./components/ControlledAndUncontrolledComponents/ControlledAndUncontrolledComponents";
+// import UncontrolledInput from "./components/ControlledAndUncontrolledComponents/ControlledAndUncontrolledComponents";
 
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState);
@@ -295,10 +295,10 @@ function App() {
         <ChildA />
       </Parent> */}
 
-      <UncontrolledInput />
+      {/* <UncontrolledInput /> */}
     </div>
 
-    // </CountContext.Provider>
+    //  </CountContext.Provider>
   );
 }
 

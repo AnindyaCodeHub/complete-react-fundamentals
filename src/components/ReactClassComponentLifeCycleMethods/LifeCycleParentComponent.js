@@ -23,7 +23,7 @@ class LifeCycleParentComponent extends Component {
     console.log("ParentComponent componentDidMount");
   }
 
-  shouldComponentUpdate() {
+  shouldComponentUpdate(nextProps, nextState) {
     console.log("ParentComponent shouldComponentUpdate");
     return true;
   }
@@ -33,7 +33,7 @@ class LifeCycleParentComponent extends Component {
     return null;
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState, snapShot) {
     console.log("ParentComponent componentDidUpdate");
   }
 

@@ -2,7 +2,7 @@
 
 //This file explains how Rendering works with React Context.
 
-//There are two ways to optimize the rendering behavior when using Recat Context.
+//There are two ways to optimize the rendering behavior when using React Context.
 //Solution 1: We can wrap the ChildA component with React.memo.
 //Solution 2: We can pass the ChildA component as the children prop of the Parent component, instead of passing ChildA component
 //as a nested element.
